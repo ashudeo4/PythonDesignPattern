@@ -13,3 +13,8 @@ class ClassicSingleton:
 
 # Two type of instantiation
 # lazy and eager instantiation
+
+s1 = ClassicSingleton.get_instance()
+s2 = ClassicSingleton.get_instance()
+
+print(s1 is s2)

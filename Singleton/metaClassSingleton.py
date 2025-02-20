@@ -12,3 +12,8 @@ class SingletonMeta(type):
 class Singleton(metaclass=SingletonMeta):
     def some_business_logic(self):
         pass
+
+s1 = Singleton()
+s2 = Singleton()
+
+print(s1 is s2)
